@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'splatfont_2regular';
+    src: url('splatfont2-webfont.woff2') format('woff2'),
+         url('splatfont2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p{
+font-family: 'Custom', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+.fotootje{
+    width: 320px;
+    height: auto;
+}
+
+.google{
+    color: purple;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.google:hover{
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+}
+
