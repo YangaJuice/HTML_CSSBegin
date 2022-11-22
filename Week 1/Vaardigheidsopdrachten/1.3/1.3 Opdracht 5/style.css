@@ -1,0 +1,40 @@
+.text1{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+.border1{
+    border: 10px solid black;
+    width: 500px; height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.tijger{
+    width: 200px; height: 200px;
+    padding-top: 150px;
+}
+
+.text2{
+    color: rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+.paragraph1{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    line-height: 0;
+}
+
+.text3{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+.link1{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
