@@ -38,3 +38,37 @@
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
 }
+
+.text4{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 400px;
+    margin-top: -500px;
+}
+.paragraph2{
+    position: relative;
+    float: right;
+    width: 250px;
+    padding: 110px;
+    top: -600px
+}
+
+.text5{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text6{
+    color: rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.paragrapgh3{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
