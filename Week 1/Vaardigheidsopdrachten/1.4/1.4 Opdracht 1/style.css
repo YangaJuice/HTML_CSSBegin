@@ -1,0 +1,13 @@
+.container{
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    line-height: 3.5;
+}
+
+h1{
+    font-size: 15px;
+}
+
+p{
+    line-height: 2.5;
+}

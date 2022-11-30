@@ -1,0 +1,59 @@
+.topnav{
+    background-color: white;
+    overflow: hidden;    
+}
+
+.topnav a{
+    float: none;
+    color: green;
+    text-align: center;
+    padding: 50px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    box-sizing: flex;
+}
+
+.topnav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active1{
+    background-color: green;
+    color: black;
+}
+
+.topnav a.active2{
+    background-color: yellow;
+    color: black;
+}
+
+.topnav a.active3{
+    background-color: red;
+    color: black;
+}
+
+.topnav a.active4{
+    background-color: blue;
+    color: black;
+}
+
+.topnav a.active5{
+    background-color: green;
+    color: black;
+}
+
+.topnav a.active6{
+    background-color: yellow;
+    color: black;
+}
+
+.topnav a.active7{
+    background-color: red;
+    color: black;
+}
+
+.topnav a.active8{
+    background-color: blue;
+    color: black;
+}
