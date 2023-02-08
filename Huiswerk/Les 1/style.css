@@ -1,7 +1,3 @@
-:root {
-
-}
-
 *::before, *, *::after {
     padding: 0;
     margin: 0;
@@ -14,23 +10,22 @@ a {
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* meestal 10px */
+    font-size: 62.5%;
     font-family: monospace;
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
+
 }
 .body {
-    /*min-height: 100vh;*/
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 2.5rem;
     color: aliceblue;
-    background-color: rgb(171, 63, 0);
     font-family: 'Courier New', Courier, monospace;
 }
-.container {                
+.container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
@@ -38,38 +33,81 @@ html {
     border: .3rem solid black;
 }
 
-.header, .footer {
+.header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: rgb(119, 43, 0);
+    background-size: cover;
 }
+
+.footer {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(119, 43, 0);
+    position: absolute;
+    bottom: 0;
+}
+
 .header--item, .footer--item {
     flex-basis: 250px;
     font-size: 2rem;
 }
+
 .footer--item {
     flex-basis: 150px;
+    text-align: center;
 }
 
 .main {
+    height: 75vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: repeat(3, 1fr);
-    background-color: rgb(171, 63, 0)
-}
-.main--item {
-    font-size: 5rem;
+    background-image: linear-gradient(to bottom,#8c1e00dc, #292929d6), url(../images/Chocolate.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
 }
 
-.image--left, .image--right {
-    grid-row-start: 1;
-    grid-row-end: 4;
+.textbox {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-25%, -90%);
 }
-.image--left {
-    grid-column-start: 1;
-    grid-column-end: 2;
+
+.logo-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 50px;
+    width: 50px;
 }
-.image--right {
-    grid-column: 3 / 4;
+
+.main--item {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
+
+.texttop {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+
+.textunder {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 15px;
+
+}
+
+
