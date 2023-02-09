@@ -21,7 +21,6 @@ html {
 .body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 2.5rem;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -41,15 +40,7 @@ html {
     background-size: cover;
 }
 
-.footer {
-    display: flex;
-    width: 100vw;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: rgb(119, 43, 0);
-    position: absolute;
-    bottom: 0;
-}
+
 
 .header--item, .footer--item {
     flex-basis: 250px;
@@ -62,24 +53,33 @@ html {
 }
 
 .main {
-    height: 75vh;
+    height: 100vh;
     display: grid;
     background-image: linear-gradient(to bottom,#8c1e00dc, #292929d6), url(../images/Chocolate.jpg);
     background-size: cover;
     background-position: top;
-    position: relative;
 }
-
-.textbox {
+.main--2{
+    height: 100%;
+}
+.footer {
     display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(119, 43, 0);
+}
+.textbox {
+    display: grid;
     position: absolute;
-    top: 50%;
+    grid-row-gap: 30px;
+    top: 60%;
     left: 40%;
     transform: translate(-25%, -90%);
 }
 
 .logo-box {
-    display: flex;
+    display: grid;
     justify-content: space-around;
     flex-wrap: wrap;
     position: absolute;
@@ -87,6 +87,10 @@ html {
     left: 40px;
     height: 50px;
     width: 50px;
+}
+
+.main-upper {
+    display: grid;
 }
 
 .main--item {
@@ -100,14 +104,96 @@ html {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 15px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s
 }
 
 .textunder {
     display: block;
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 15px;
+    letter-spacing: 15px;;
 
+
+    animation-name: moveInRight;
+    animation-duration: 1.5s
 }
 
+.button1 {
+    position: block;
+    height: 75px;
+    width: 35%;
+    border-radius: 35px;
+    border-color: gray;
+    background-color: rgb(255, 188, 129);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 350%;
+    color: rgb(255, 255, 255);
+}
+
+.text1 {
+    display: block;
+    height: 20vh;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 15px;;
+
+
+    animation-name: moveInRight;
+    animation-duration: 1.5s
+}
+
+.text2 {
+    display: block;
+    height: 10vh;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 5px;;
+
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-gallery {
+    gap: 5vh;
+    width: 500px;
+    height: 500px;
+}
+
+img{
+    max-height: 100%;  
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+
+    }
+    100% {
+        opacity: 1;
+        transform: translate(1);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(1);
+    }
+}
 
